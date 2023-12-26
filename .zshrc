@@ -114,3 +114,5 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # opam configuration
 [[ ! -r /Users/renata-amutio/.opam/opam-init/init.zsh ]] || source /Users/renata-amutio/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+eval "$(zoxide init zsh)"
