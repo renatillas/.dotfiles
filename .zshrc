@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias repos="cd ~/Documents/repos"
+alias tldrf='tldr --list | fzf --preview "tldr {1} --color" --preview-window=right,70% | xargs tldr'
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # opam configuration
