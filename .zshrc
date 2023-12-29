@@ -77,7 +77,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete colored-man-pages colorize brew)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete colored-man-pages colorize docker zoxide alias-finder fzf gh git-auto-fetch docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,5 +111,3 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # opam configuration
 [[ ! -r /Users/renata-amutio/.opam/opam-init/init.zsh ]] || source /Users/renata-amutio/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
-eval "$(zoxide init zsh)"
