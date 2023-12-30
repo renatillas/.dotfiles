@@ -3,3 +3,4 @@
 -- Add any additional options here
 --
 vim.g.background = "dark"
+vim.opt.colorcolumn = "80"
