@@ -1,48 +1,39 @@
-# My .dotfiles folder
+## My Personal Dotfiles Configuration
 
-<!--toc:start-->
-- [My .dotfiles folder](#my-dotfiles-folder)
-- [Programs that I like](#programs-that-i-like)
-  - [Replacement for cd: zoxide](#replacement-for-cd-zoxide)
-  - [Replacement for htop: bottom](#replacement-for-htop-bottom)
-  - [Replacement for cat: bat](#replacement-for-cat-bat)
-  - [Replacement for ls: exa](#replacement-for-ls-exa)
-<!--toc:end-->
+This repository contains my customized configuration files for various applications and tools. I utilize this setup to maintain consistency across different environments.
 
-This is my personal .dotfiles folder. I use it to keep track of my configuration
-files.
-I use [GNU Stow](https://www.gnu.org/software/stow/) to manage my dotfiles:
+To manage my dotfiles, I use [GNU Stow](https://www.gnu.org/software/stow/). To deploy them, execute the following command:
 
 ```bash
-stow --adopt . --target=$HOME
+stow --adopt --target=$HOME .
 ```
 
-## Programs that I like
+## Favorite Tools
 
-### Replacement for cd: zoxide
+### Alternative to cd: zoxide
 
 ```bash
 brew install zoxide
-z
+z <directory-name>
 ```
 
-### Replacement for htop: bottom
+### Alternative to htop: bottom
 
 ```bash
 brew install bottom
 btm
 ```
 
-### Replacement for cat: bat
+### Alternative to cat: bat
 
 ```bash
 brew install bat
-bat
+bat <file-path>
 ```
 
-### Replacement for ls: exa
+### Alternative to ls: exa
 
 ```bash
 brew install exa
-exa
+exa --git <directory-name>
 ```
