@@ -1,3 +1,2 @@
 .ssh/*
-.config/nvim/lazy-lock.json
 !.ssh/renatillas.pub
