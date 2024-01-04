@@ -3,8 +3,8 @@ return {
   opts = {
     workspaces = {
       {
-        name = "second-brain",
-        path = "Users/renatillas/Library/Mobile Documents/iCloud~md~obsidian/Documents/second-brain",
+        name = "SecondBrain",
+        path = "/Users/renata-amutio/Library/Mobile Documents/iCloud~md~obsidian/Documents/SecondBrain",
       },
     },
     completion = {
