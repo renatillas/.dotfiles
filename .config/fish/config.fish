@@ -1,8 +1,25 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
-# To add homebrew to path
+# Setting path variables
+## To add homebrew to path
 fish_add_path /opt/homebrew/bin
 
-# To init zoxide 
+## Add cargo's bin directory to path
+fish_add_path $HOME/.cargo/bin
+
+# Init programs within fish
+## To init zoxide 
 zoxide init fish | source
+
+## To init starship 
+starship init fish | source
+
+# vim keybindings
+fish_vi_key_bindings
+set fish_cursor_default block
+set fish_cursor_insert line
+set fish_cursor_visual underscore
+set fish_cursor_replace underscore
+set fish_cursor_replace_one underscore
+set fish_cursor_external underscore
