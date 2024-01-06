@@ -1,0 +1,6 @@
+[user]
+	name = Renata Amutio Herrero
+	email = renata.amutio@gmail.com
+
+[includeIf "gitdir/i:**/fever/"]
+	path = ~/Documents/repos/fever/.gitconfig
