@@ -23,3 +23,8 @@ set fish_cursor_visual underscore
 set fish_cursor_replace underscore
 set fish_cursor_replace_one underscore
 set fish_cursor_external underscore
+
+# Aliases and abbreviations
+alias cat bat
+alias cd z
+alias ls exa
