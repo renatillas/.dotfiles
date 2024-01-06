@@ -1,5 +1,5 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
+  { "ellisonleao/gruvbox.nvim", lazy = true },
   {
     "LazyVim/LazyVim",
     opts = {
