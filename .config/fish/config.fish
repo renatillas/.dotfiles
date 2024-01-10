@@ -27,4 +27,6 @@ set fish_cursor_external underscore
 # Aliases and abbreviations
 alias cat bat
 alias cd z
-alias ls exa
+alias l="exa -la --icons --git"
+alias lt="exa -la --tree --level=2 --icons --git"
+alias v nvim
