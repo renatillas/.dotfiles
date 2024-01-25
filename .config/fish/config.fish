@@ -16,13 +16,15 @@ zoxide init fish | source
 starship init fish | source
 
 # vim keybindings
-fish_vi_key_bindings
-set fish_cursor_default block
-set fish_cursor_insert line
-set fish_cursor_visual underscore
-set fish_cursor_replace underscore
-set fish_cursor_replace_one underscore
-set fish_cursor_external underscore
+function fish_user_key_bindings
+    fish_vi_key_bindings default
+    set fish_cursor_default block
+    set fish_cursor_insert line
+    set fish_cursor_visual underscore
+    set fish_cursor_replace underscore
+    set fish_cursor_replace_one underscore
+    set fish_cursor_external underscore
+end
 
 # Aliases and abbreviations
 alias cat bat
