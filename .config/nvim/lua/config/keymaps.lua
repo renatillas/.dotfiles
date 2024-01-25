@@ -4,5 +4,9 @@
 
 vim.keymap.del({ "n", "x" }, "j")
 vim.keymap.del({ "n", "x" }, "k")
-vim.keymap.del("n", "<leader>gg")
-vim.keymap.del("n", "<leader>gG")
+vim.keymap.set("n", "<leader>dd", function()
+  Util.terminal({ "lazydocker" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false })
+end, { desc = "Lazygit (root dir)" })
+vim.keymap.set("n", "<leader>dD", function()
+  Util.terminal({ "lazydocker" }, { esc_esc = false, ctrl_hjkl = false })
+end, { desc = "Lazygit (cwd)" })
