@@ -37,3 +37,4 @@ alias nu="nu --config ~/.config/nushell/config.nu --env-config ~/.config/nushell
 # opam configuration
 source /Users/renata-amutio/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
 
+~/.cargo/bin/mise activate fish | source
