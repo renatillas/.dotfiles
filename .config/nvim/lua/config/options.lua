@@ -4,3 +4,4 @@
 --
 vim.g.background = "dark"
 vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "+120"
