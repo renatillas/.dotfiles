@@ -4,3 +4,5 @@
 
 [includeIf "gitdir/i:**/fever/"]
 	path = ~/Documents/repos/fever/.gitconfig
+[core]
+	excludesfile = ~/.user_gitignore
