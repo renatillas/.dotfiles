@@ -27,7 +27,7 @@ set fish_cursor_external underscore
 # Aliases and abbreviations
 alias cat bat
 alias cd z
-alias l="exa -la --icons --git"
-alias lt="exa -la --tree --level=2 --icons --git"
+alias l="eza -la --icons --git"
+alias lt="eza -la --tree --level=2 --icons --git"
 alias v nvim
 alias nu="nu --config ~/.config/nushell/config.nu --env-config ~/.config/nushell/env.nu"

@@ -31,9 +31,9 @@ brew install bat
 bat <file-path>
 ```
 
-### Alternative to ls: exa
+### Alternative to ls: eza
 
 ```bash
-brew install exa
-exa --git <directory-name>
+brew install eza
+eza --git <directory-name>
 ```
