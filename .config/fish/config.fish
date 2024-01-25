@@ -33,3 +33,7 @@ alias l="eza -la --icons --git"
 alias lt="eza -la --tree --level=2 --icons --git"
 alias v nvim
 alias nu="nu --config ~/.config/nushell/config.nu --env-config ~/.config/nushell/env.nu"
+
+# opam configuration
+source /Users/renata-amutio/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
+
