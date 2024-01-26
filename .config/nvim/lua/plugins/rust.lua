@@ -11,6 +11,9 @@ return {
           src = {
             cmp = { enabled = true },
           },
+          null_ls = {
+            enabled = true,
+          },
         },
       },
     },
