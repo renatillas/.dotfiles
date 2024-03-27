@@ -1,28 +1,54 @@
-local Util = require("lazyvim.util")
+local builtin = require("telescope.builtin")
 return {
   "telescope.nvim",
-  dependencies = {
-    "nvim-telescope/telescope-fzf-native.nvim",
-    enabled = vim.fn.executable("make") == 1,
-    build = "make",
-    config = function()
-      Util.on_load("telescope.nvim", function()
-        require("telescope").load_extension("fzf")
-      end)
-    end,
+  opts = {
+    defaults = {
+      vimgrep_arguments = {
+        "rg",
+        "--color=never",
+        "--no-heading",
+        "--with-filename",
+        "--line-number",
+        "--column",
+        "--smart-case",
+        "--hidden",
+        "--glob",
+        "!{**/.git/*}",
+      },
+    },
+    pickers = {
+      find_files = {
+        find_command = {
+          "rg",
+          "--files",
+          "--color=never",
+          "--line-number",
+          "--column",
+          "--smart-case",
+          "--hidden",
+          "--glob",
+          "!{**/.git/*}",
+        },
+      },
+    },
   },
   keys = function()
     return {
-      { "<leader>sb", "<cmd>Telescope buffers<cr>", desc = "[b]uffers" },
-      { "<leader>sd", "<cmd>Telescope diagnostics<cr>", desc = "workspace [d]iagnostics" },
-      { "<leader>sD", "<cmd>Telescope diagnostics bufnr=0<cr>", desc = "[D]ocument diagnostics" },
-      { "<leader>sf", Util.telescope("files"), desc = "[f]iles" },
-      { "<leader>sg", "<cmd>Telescope live_grep<cr>", desc = "[g]rep" },
-      { "<leader>sh", "<cmd>Telescope help_tags<cr>", desc = "[h]elp" },
-      { "<leader>sk", "<cmd>Telescope keymaps<cr>", desc = "[k]eymaps" },
-      { "<leader>sm", "<cmd>Telescope man_pages<cr>", desc = "[m]an pages" },
-      { "<leader>sr", "<cmd>Telescope resume<cr>", desc = "[r]esume telescope search" },
-      { "<leader>sw", "<cmd>Telescope grep_string<cr>", desc = "current [w]ord" },
+      { "<leader>sb", builtin.buffers, desc = "[b]uffers" },
+      { "<leader>sd", builtin.diagnostics, desc = "workspace [d]iagnostics" },
+      {
+        "<leader>sf",
+        function()
+          builtin.find_files({ hidden = true })
+        end,
+        desc = "[f]iles",
+      },
+      { "<leader>sg", builtin.live_grep, desc = "[g]rep word" },
+      { "<leader>sG", builtin.grep_string, desc = "[G]rep current word" },
+      { "<leader>sh", builtin.help_tags, desc = "[h]elp" },
+      { "<leader>sk", builtin.keymaps, desc = "[k]eymaps" },
+      { "<leader>sm", builtin.man_pages, desc = "[m]an pages" },
+      { "<leader>sr", builtin.resume, desc = "[r]esume telescope search" },
     }
   end,
 }

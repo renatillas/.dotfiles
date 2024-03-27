@@ -1,13 +1,11 @@
 import = ["~/.config/alacritty/themes/themes/gruvbox_dark.toml"]
 
-[shell]
-program = "/opt/homebrew/bin/fish"
-args = ["--command", '"zellij"']
-
 [window]
 opacity = 0.95
-decorations = "Buttonless"
+decorations = "None"
+startup_mode = "Windowed"
 option_as_alt = "OnlyLeft"
+dynamic_padding = true
 
 [font]
 normal = { family = "MonaspiceKr Nerd Font Mono", style = "Regular" }
@@ -16,3 +14,10 @@ size = 15
 [cursor]
 style = { shape = "Beam" }
 vi_mode_style = { shape = "Block" }
+
+[selection]
+save_to_clipboard = true
+
+[shell]
+program = "/opt/homebrew/bin/fish"
+args = ["-c", "tmux"]

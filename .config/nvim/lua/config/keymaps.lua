@@ -2,8 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local Util = require("lazyvim.util")
-vim.keymap.del({ "n", "x" }, "j")
-vim.keymap.del({ "n", "x" }, "k")
 
 vim.keymap.set("n", "<leader>y", function()
   local rp = vim.fn.expand("%:")
@@ -32,9 +30,10 @@ vim.keymap.set("n", "<leader>y", function()
   local command = 'echo "' .. newPath .. '" | pbcopy'
   os.execute(command)
 end)
-vim.keymap.set("n", "<leader>dd", function()
+
+vim.keymap.set("n", "<leader>Dd", function()
   Util.terminal({ "lazydocker" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false })
 end, { desc = "Lazygit (root dir)" })
-vim.keymap.set("n", "<leader>dD", function()
+vim.keymap.set("n", "<leader>DD", function()
   Util.terminal({ "lazydocker" }, { esc_esc = false, ctrl_hjkl = false })
 end, { desc = "Lazygit (cwd)" })

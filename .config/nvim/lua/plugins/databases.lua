@@ -23,6 +23,9 @@ return {
       vim.g.db_ui_use_nerd_fonts = 1
       vim.g.dbs = { dev = "postgresql://fever_user:fever_password@localhost:54321/fever" }
     end,
+    keys = {
+      { "<leader>DB", "<cmd>DBUIToggle<cr>", desc = "Toggle DadBodUI" },
+    },
   },
   {
     "hrsh7th/nvim-cmp",

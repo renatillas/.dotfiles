@@ -1,9 +1,0 @@
----
-"workspace:toggle_ai_assistant": alt-a
-"editor_view:cut_word_left": none
-"editor_view:delete_all_right": none
-"editor_view:insert_autosuggestion": cmd-y
-"editor_view:delete_all_left": none
-"editor_view:cut_word_right": none
-"terminal:ask_ai_assistant": none
-"editor_view:cut_all_right": none
