@@ -37,3 +37,5 @@ end, { desc = "Lazygit (root dir)" })
 vim.keymap.set("n", "<leader>DD", function()
   Util.terminal({ "lazydocker" }, { esc_esc = false, ctrl_hjkl = false })
 end, { desc = "Lazygit (cwd)" })
+
+vim.keymap.set("n", "<C-c>", "<C-a>")
