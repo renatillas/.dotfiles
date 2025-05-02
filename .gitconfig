@@ -3,6 +3,15 @@
 	email = renata.amutio@gmail.com
 
 [includeIf "gitdir/i:**/fever/"]
-	path = ~/Documents/repos/fever/.gitconfig
+	path = ~/Projects/fever/.gitconfig
 [core]
 	excludesfile = ~/.user_gitignore
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[url "renatillas:"]
+	insteadOf = https://github.com/

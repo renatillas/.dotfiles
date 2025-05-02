@@ -3,6 +3,9 @@ return {
   "telescope.nvim",
   opts = {
     defaults = {
+      path_display = {
+        filename_first = { reverse_directories = true },
+      },
       vimgrep_arguments = {
         "rg",
         "--color=never",
@@ -18,6 +21,7 @@ return {
     },
     pickers = {
       find_files = {
+        theme = "dropdown",
         find_command = {
           "rg",
           "--files",

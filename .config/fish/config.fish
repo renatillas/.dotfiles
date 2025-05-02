@@ -17,7 +17,7 @@ starship init fish | source
 
 # vim keybindings
 function fish_user_key_bindings
-    fish_vi_key_bindings default
+    fish_vi_key_bindings insert
     set fish_cursor_default block
     set fish_cursor_insert line
     set fish_cursor_visual underscore
@@ -38,3 +38,15 @@ alias nu="nu --config ~/.config/nushell/config.nu --env-config ~/.config/nushell
 source /Users/renata-amutio/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
 
 ~/.cargo/bin/mise activate fish | source
+
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
+set -gx PATH $HOME/.cabal/bin /Users/renata-amutio/.ghcup/bin $PATH # ghcup-env
+
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init.fish 2>/dev/null || :
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

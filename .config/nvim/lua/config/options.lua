@@ -9,9 +9,12 @@ vim.filetype.add({
     http = "http",
   },
 })
+vim.o.background = "light"
 
 vim.filetype.add({
   extension = {
     matcha = "html",
   },
 })
+
+vim.g.lazyvim_python_lsp = "basedpyright"

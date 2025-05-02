@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 local Util = require("lazyvim.util")
 
-vim.keymap.set("n", "<leader>y", function()
+vim.keymap.set("n", "<leader>yp", function()
   local rp = vim.fn.expand("%:")
   local words = {}
   for word in string.gmatch(rp, "[^/]+") do
@@ -28,6 +28,12 @@ vim.keymap.set("n", "<leader>y", function()
   local newPath = table.concat(words, ".")
 
   local command = 'echo "' .. newPath .. '" | pbcopy'
+  os.execute(command)
+end)
+
+vim.keymap.set("n", "<leader>yP", function()
+  local path = vim.fn.expand("%:")
+  local command = 'echo "' .. path .. '" | pbcopy'
   os.execute(command)
 end)
 

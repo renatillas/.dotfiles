@@ -7,3 +7,5 @@ vim.filetype.add({
     templ = "templ",
   },
 })
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, { pattern = { "*.ml" }, callback = vim.lsp.buf.format })
