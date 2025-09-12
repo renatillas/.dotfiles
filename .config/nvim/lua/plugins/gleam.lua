@@ -1,9 +1,11 @@
 return {
-  "neovim/nvim-lspconfig",
-  opts = {
-    servers = {
-      gleam = {},
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        gleam = {},
+      },
+      inline_hints = { enabled = true },
     },
-    inline_hints = { enabled = true },
   },
 }

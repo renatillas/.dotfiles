@@ -50,3 +50,6 @@ source ~/.orbstack/shell/init.fish 2>/dev/null || :
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# Created by `pipx` on 2025-08-18 20:01:25
+set PATH $PATH /Users/renata-amutio/.local/bin

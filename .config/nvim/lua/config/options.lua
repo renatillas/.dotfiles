@@ -4,17 +4,17 @@
 --
 vim.opt.colorcolumn = "80"
 vim.opt.colorcolumn = "+120"
+
 vim.filetype.add({
   extension = {
     http = "http",
   },
 })
-vim.o.background = "light"
 
 vim.filetype.add({
   extension = {
-    matcha = "html",
+    templ = "templ",
   },
 })
-
-vim.g.lazyvim_python_lsp = "basedpyright"
+vim.filetype.add({ extension = { _hs = "hyperscript" } })
+vim.treesitter.language.register("hyperscript", "hyperscript")

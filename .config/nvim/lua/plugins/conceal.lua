@@ -1,3 +1,0 @@
-return {
-  { "Jxstxs/conceal.nvim" },
-}
