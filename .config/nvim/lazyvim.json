@@ -1,12 +1,14 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.ai.copilot",
+    "lazyvim.plugins.extras.lang.erlang",
+    "lazyvim.plugins.extras.lang.git",
     "lazyvim.plugins.extras.lang.gleam",
-    "lazyvim.plugins.extras.lang.haskell",
     "lazyvim.plugins.extras.util.rest"
   ],
-  "install_version": 7,
+  "install_version": 8,
   "news": {
-    "NEWS.md": "10960"
+    "NEWS.md": "11866"
   },
   "version": 8
 }
