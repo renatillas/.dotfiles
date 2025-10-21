@@ -7,7 +7,8 @@ email = "renata.amutio@gmail.com"
 [ui]
 default-command = "log"
 editor = "nvim"
+pager = ["delta", "--features=decorations side-by-side"]
+diff-formatter = ":git"
 
 [aliases]
-tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@"]
 tug- = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]

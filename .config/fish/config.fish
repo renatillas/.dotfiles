@@ -53,3 +53,6 @@ set --export PATH $BUN_INSTALL/bin $PATH
 
 # Created by `pipx` on 2025-08-18 20:01:25
 set PATH $PATH /Users/renata-amutio/.local/bin
+
+# opencode
+fish_add_path /Users/renata-amutio/.opencode/bin

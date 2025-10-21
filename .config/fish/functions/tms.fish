@@ -2,7 +2,7 @@ function tms
     if [ (count $argv) -eq 1 ]
         set selected $argv[1]
     else
-        set selected (fd . ~/Projects/fever ~/Projects ~/Projects/renatillas ~/Exercism/ ~/Projects/kaiboards --min-depth 1 --max-depth 1 --hidden --type d | fzf)
+        set selected (fd . ~/Projects ~/Projects/renatillas --min-depth 1 --max-depth 1 --hidden --type d | fzf)
     end
 
     if [ -z $selected ]
