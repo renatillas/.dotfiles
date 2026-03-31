@@ -37,8 +37,6 @@ alias nu="nu --config ~/.config/nushell/config.nu --env-config ~/.config/nushell
 # opam configuration
 source /Users/renata-amutio/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
 
-~/.cargo/bin/mise activate fish | source
-
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
 set -gx PATH $HOME/.cabal/bin /Users/renata-amutio/.ghcup/bin $PATH # ghcup-env
 
